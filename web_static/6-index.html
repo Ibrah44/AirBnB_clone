@@ -1,50 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>AirBnB Clone</title>
-        <link rel="stylesheet" type="text/css" href="styles/4-common.css">
-        <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
-        <link rel="stylesheet" type="text/css" href="styles/3-header.css">
-        <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
-        <link rel="shortcut icon" type="image/png" href="images/icon.png"/>
-    </head>
-    <body>
-        <header>
-            <div class="logo">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>AirBnB_clone</title>
+
+    <link rel="shortcut icon" href="images/icon.png">
+
+    <link rel="stylesheet" href="styles/4-common.css">
+    <link rel="stylesheet" href="styles/3-header.css">
+    <link rel="stylesheet" href="styles/3-footer.css">
+    <link rel="stylesheet" href="styles/6-filters.css">
+</head>
+
+<body>
+    <header>
+        <div id="header_logo"></div>
+    </header>
+    <!--*********DIV Container-->
+    <div class="container">
+        <!--Section filters-->
+        <section class="filters">
+            <div class="locations">
+                <h3>States</h3>
+                <h4>Abuja, Lagos</h4>
+                <!--dropdown menu-->
+                <ul class="popover">
+                    <li>
+                        <h2>Abuja</h2>
+                    </li>
+                    <!--list of cities-->
+                    <ul>
+                        <li>
+                            <h4>Wuse</h4>
+                        </li>
+                        <li>
+                            <h4>Garki</h4>
+                        </li>
+                    </ul>
+                    <li>
+                        <h2>Lagos</h2>
+                    </li>
+                    <!--list of cities-->
+                    <ul>
+                        <li>
+                            <h4>Lekki</h4>
+                        </li>
+                        <li>
+                            <h4>Ikeja</h4>
+                        </li>
+                    </ul>
+                </ul>
+
             </div>
-        </header>
-        <div class="container">
-            <section class="filters">
-                <div class="locations">
-                    <h3>States</h3>
-                    <h4>California, Arizona..</h4>
-                    <ul class="popover">
-                        <li>
-                            <h2>Arizona:</h2>
-                            <p>Page</p>
-                            <p>Page2</p>
-                        </li><li>
-                            <h2 class="California">California:</h2>
-                            <p>San Francisco</p>
-                            <p>Los Angeles</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="amenities">
-                    <h3>Amenities</h3>
-                    <h4>Internet, Kitchen..</h4>
-                    <ul class="popover">
-                        <li>
-                            <p>Internet</p>
-                            <p>TV</p>
-                            <p>Kitchen</p>
-                            <p>Iron</p>
-                        </li>
-                    </ul>
-                  </div>
-                <button>Search</button>
-            </section>
-        </div>
-        <footer>Best School</footer>
-    </body>
+
+            <div class="amenities">
+                <h3>Amenities</h3>
+                <h4>Wifi, Kitchen..</h4>
+                <!--dropdown menu-->
+                <ul class="popover">
+                    <li>
+                        <h4>Wifi</h4>
+                    </li>
+                    <li>
+                        <h4>Kitchen</h4>
+                    </li>
+                    <li>
+                        <h4>TV</h4>
+                    </li>
+                    <li>
+                        <h4>Closet</h4>
+                    </li>
+                </ul>
+            </div>
+            <!--Button-->
+
+            <button class="button">Search</button>
+        </section>
+    </div>
+    <!--Footer-->
+    <footer>
+        <p>Best School</p>
+    </footer>
+</body>
+
 </html>

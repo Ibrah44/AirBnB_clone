@@ -1,154 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>AirBnB Clone</title>
-        <link rel="stylesheet" type="text/css" href="styles/4-common.css">
-        <link rel="stylesheet" type="text/css" href="styles/3-footer.css">
-        <link rel="stylesheet" type="text/css" href="styles/3-header.css">
-        <link rel="stylesheet" type="text/css" href="styles/6-filters.css">
-        <link rel="stylesheet" type="text/css" href="styles/100-places.css">
-        <link rel="shortcut icon" type="image/png" href="images/icon.png"/>
-    </head>
+
+<head>
+    <title>AirBnb Clone</title>
+    <link rel="stylesheet" href="styles/3-header.css">
+    <link rel="stylesheet" href="styles/4-common.css">
+    <link rel="stylesheet" href="styles/3-footer.css">
+    <link rel="stylesheet" href="styles/6-filters.css">
+    <link rel="stylesheet" href="styles/7-places.css">
+    <link rel="stylesheet" href="styles/8-places.css">
+    <link rel="stylesheet" href="styles/100-places.css">
+    <link rel="icon" href="images/icon.png" sizes="16x16">
+</head>
+
+<body>
+
     <body>
-        <header>
-            <div class="logo">
-            </div>
-        </header>
+        <header></header>
         <div class="container">
             <section class="filters">
-                <div class="locations">
+                <div class="locations left-filter">
                     <h3>States</h3>
-                    <h4>California, Arizona..</h4>
+                    <h4>Abuja State</h4>
                     <ul class="popover">
                         <li>
-                            <h2>Arizona:</h2>
-                            <p>Page</p>
-                            <p>Page2</p>
-                        </li><li>
-                            <h2 class="California">California:</h2>
-                            <p>San Francisco</p>
-                            <p>Los Angeles</p>
+                            <h2>Abuja</h2>
+                            <ul>
+                                <li>Wuse</li>
+                                <li>Garki</li>
+                                <li>kuje</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>Lagos State</h2>
+                            <ul>
+                                <li>Lekki</li>
+                                <li>Ikeja</li>
+                                <li>Main land</li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
-                <div class="amenities">
+                <div class="amenities right-filter">
                     <h3>Amenities</h3>
-                    <h4>Internet, Kitchen..</h4>
+                    <h4>Internet Facilities</h4>
                     <ul class="popover">
                         <li>
-                            <p>Internet</p>
-                            <p>TV</p>
-                            <p>Kitchen</p>
-                            <p>Iron</p>
+                        <li>Pool</li>
+                        <li>Spa</li>
+                        <li>Gym</li>
                         </li>
                     </ul>
-                  </div>
+                </div>
                 <button>Search</button>
             </section>
             <section class="places">
                 <h1>Places</h1>
-                <article>
-                    <h2>My home</h2>
-                    <div class="price_by_night">$80</div>
+
+                <!--My Home Section-->
+                <article class="article">
+                    <h2>My Home</h2>
+                    <div class="price_by_night">
+                        <h3>$80</h3>
+                    </div>
+
                     <div class="information">
-                        <div class="max_guest">15 Guests</div>
-                        <div class="number_rooms">1 Bedroom</div>
-                        <div class="number_bathrooms">1 Bathroom</div>
+                        <div class="max_guest">
+                            <p>3 Guest</p>
+                        </div>
+                        <div class="number_rooms">
+                            <p>3 rooms</p>
+                        </div>
+                        <div class="number_bathrooms">
+                            <p>1 Bathroom</p>
+                        </div>
                     </div>
-                    <div class="user"><b>Owner</b>: John Lennon</div>
+
+                    <div class="user">
+                        <strong>Owner:</strong> Progress Ochuko Eyaadah 😎🥰</p>
+                    </div>
                     <div class="description">
-                        This is a lovely 1 bedroom and 1 bathroom apartment that can accommodate 2 people. It locates at the center of Shanghai and next to subway line 1. 1 stop to People Square, 2 stops to Bund, 3 stops to Jingan Temple.
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, doloribus sequi
+                            dolor ducimus ipsum nobis veniam cum repudiandae inventore distinctio qui ratione
+                            deleniti iusto culpa unde nostrum animi suscipit optio.</p>
                     </div>
-                    <div class="amenities">
-                        <h2><b>Amenities</b></h2>
-                        <ul>
-                            <li class="TV"><p>TV</p></li>
-                            <li class="Wifi"><p>Wifi</p></li>
-                            <li class="Peta"><p>Pet friendly</p></li>
-                        </ul>
-                    </div>
-                    <div class="reviews">
-                        <h2><b>2 Reviews</b></h2>
-                        <ul>
-                            <li>
-                                <h3>From Bob Dylan the 27th January 2017</h3>
-                                <p>Rumahi is an epic. Nothing more I can say. A star</p>
-                            </li>
-                            <li>
-                                <h3>Cornnier the 4th January 2017</h3>
-                                <p>Highly recommended</p>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-                <article>
-                    <h2>Tiny house</h2>
-                    <div class="price_by_night">$65</div>
-                    <div class="information">
-                        <div class="max_guest">4 Guests</div>
-                        <div class="number_rooms">3 Bedrooms</div>
-                        <div class="number_bathrooms">1 Bathroom</div>
-                    </div>
-                    <div class="user"><b>Owner</b>: Adrienne</div>
-                    <div class="description">
-                        Our place is a private, affordable stand-alone guests house centrally located just minutes to French Quarters, downtown, the Fair Grounds (Jazz Fest) and City Park. The guest house is a quaint, 400 square ft. with a full bath, mini kitchen, & living room. The extra high ceilings make the home feel more spacious. The sofa converts to a bed also. we have a hand made counter area that adds character to the room and a great porch/deck to relax on and have a glass of Merlot.
-                    </div>
+
+                    <!--Articles section-->
                     <div class="amenities">
                         <h2>Amenities</h2>
                         <ul>
-                            <li class="TV"><p>TV</p></li>
-                            <li class="Wifi"><p>Wifi</p></li>
+                            <li class="Pet">Pet Friendly</li>
+                            <li class="Tv">Tv</li>
+                            <li class="Wifi">Wifi</li>
                         </ul>
                     </div>
+
+                    <!--Review Section-->
                     <div class="reviews">
-                        <h2>2 Reviews</h2>
+                        <h2>Review</h2>
                         <ul>
                             <li>
-                                <h3>From Bob Dylan the 27th January 2017</h3>
-                                <p>Rumahi is an epic. Nothing more I can say. A star</p>
-                            </li>
-                            <li>
-                                <h3>From Cornnier the 4th January 2017</h3>
-                                <p>Highly recommended</p>
+                                <strong>From Bob Dylan the 27th January 2017</strong>
+                                <p>Progress is an epic host. Nothing more i can say, 5 stars</p>
                             </li>
                         </ul>
                     </div>
                 </article>
-                <article>
-                    <h2>A suite</h2>
-                    <div class="price_by_night">$190</div>
+
+                <!--Tiny house section-->
+                <article class="article">
+                    <h2>Tiny House</h2>
+                    <div class="price_by_night">
+                        <h3>$10</h3>
+                    </div>
+
                     <div class="information">
-                        <div class="max_guest">120 Guest</div>
-                        <div class="number_rooms">4 Bedrooms</div>
-                        <div class="number_bathrooms">3 Bath</div>
+                        <div class="max_guest">
+                            <p>2 Guest</p>
+                        </div>
+                        <div class="number_rooms">
+                            <p>1 rooms</p>
+                        </div>
+                        <div class="number_bathrooms">
+                            <p>1 Bathroom</p>
+                        </div>
                     </div>
-                    <div class="user"><b>Owner</b>: Shed Uzhneb</div>
+
+                    <div class="user">
+                        <strong>Owner:</strong>Stephanie Igbibi😁</p>
+                    </div>
                     <div class="description">
-                        This is a lovely 1 bedroom and 1 bathroom apartment that can accommodate 2 people. It locates at the center of Shanghai and next to subway line 1. 1 stop to People Square, 2 stops to Bund, 3 stops to Jingan Temple.
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, doloribus sequi
+                            dolor ducimus ipsum nobis veniam cum repudiandae inventore distinctio qui ratione
+                            deleniti iusto culpa unde nostrum animi suscipit optio.</p>
                     </div>
+
+                    <!--Articles section-->
                     <div class="amenities">
                         <h2>Amenities</h2>
                         <ul>
-                            <li class="Wifi"><p>Wifi</p></li>
-                            <li class="Peta"><p>Pets friendly</p></li>
+                            <li class="Pet">Pet Friendly</li>
                         </ul>
                     </div>
+
+                    <!--review section-->
                     <div class="reviews">
-                        <h2>2 Reviews</h2>
+                        <h2>Review</h2>
                         <ul>
                             <li>
-                                <h3>From Bob Dylan the 27th January 2017</h3>
-                                <p>Rumahi is an epic. Nothing more I can say. A star</p>
-                            </li>
-                            <li>
-                                <h3>Cornnier the 4th January 2017</h3>
-                                <p>Highly recommended</p>
+                                <strong>From Dean the 10th December 2016</strong>
+                                <p>Stephanie is the best, i am definitely coming back 5 stars for her</p>
                             </li>
                         </ul>
                     </div>
                 </article>
+
+                <!--Suite Section-->
+                <article class="article">
+                    <h2>Suite</h2>
+                    <div class="price_by_night">
+                        <h3>$500</h3>
+                    </div>
+
+                    <div class="information">
+                        <div class="max_guest">
+                            <p>10 Guest</p>
+                        </div>
+                        <div class="number_rooms">
+                            <p>10 rooms</p>
+                        </div>
+                        <div class="number_bathrooms">
+                            <p>10 Bathroom</p>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <strong>Owner:</strong>Theophilus Ajiri Menor 🤔🤑</p>
+                    </div>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, doloribus sequi
+                            dolor ducimus ipsum nobis veniam cum repudiandae inventore distinctio qui ratione
+                            deleniti iusto culpa unde nostrum animi suscipit optio.</p>
+                    </div>
+
+                    <!--Articles section-->
+                    <div class="amenities">
+                        <h2>Amenities</h2>
+                        <ul>
+                            <li class="Pet">Pet Friendly</li>
+                            <li class="Tv">Tv</li>
+                            <li class="Wifi">Wifi</li>
+                        </ul>
+
+                        <!--Review section-->
+                        <div class="reviews">
+                            <h2>Review</h2>
+                            <ul>
+                                <li>
+                                    <strong>Kelvin the 14th February 2017</strong>
+                                    <p>Theo is an epic host. Nothing more i can say, 5 stars</p>
+                                </li>
+                            </ul>
+                        </div>
+                </article>
+
             </section>
         </div>
-        <footer>Best School</footer>
+        <footer>
+            <p>Best School</p>
+        </footer>
     </body>
+</body>
+
 </html>
